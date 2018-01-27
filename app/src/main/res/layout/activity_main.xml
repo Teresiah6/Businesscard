@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.businesscard.MainActivity">
+
+    <TextView
+        android:id="@+id/heading_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Victory Yorghut and Cakes Place"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="44sp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/heading_text_view"
+        android:id="@+id/linear_layout">
+
+        <ImageView
+            android:id="@+id/yorghut_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="222dp"
+            android:layout_below="@id/heading_text_view"
+            android:src="@drawable/yorghut"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="222dp"
+            android:src="@drawable/cake"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/description_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Business description"
+        android:textSize="35sp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_below="@id/linear_layout"
+        android:background="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/fulldescription_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description_text_view"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:text="Victory Yorghut and Cake Place is a business in Machinery Community, Nyandarua county. The business is a place where you can come with a book, your mobile device and enjoy cake, yorghut and other beverages. We also offer our services for birthdays and other celebrations. In addition, we offer fast Wi-Fi to our customers " />
+
+    <TextView
+        android:id="@+id/contact_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fulldescription_text_view"
+        android:text="Contact Information"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="35sp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/fullcontact_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_text_view"
+        android:text="Website: www.victoryyorghutandcakeplace.co.ke
+Telephone: +25470012000
+Email:victoryyorghutandcakeplace@yahoo.com"
+
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"/>
+
+
+    <TextView
+        android:id="@+id/address_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullcontact_text_view"
+        android:text="Address:"
+        android:textSize="35sp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/holo_blue_bright"/>
+
+    <TextView
+        android:id="@+id/addressinfo_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/address_text_view"
+        android:text="P.O Box 17, Miharati"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:textSize="22sp"/>
+
+
+</RelativeLayout>
